@@ -13,7 +13,7 @@ class ContactController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required',
-            'description' => 'required|min:5'
+            'description' => 'required|min:50'
         ]);
 
         $user = Contact::create($attributes);
